@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+}
+
+ #open-invitation{
+    background: crimson;
+    color: #fff;
+    border: 2px solid crimson;
+}
+
+h1 #coverfont  {
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  display: inline-block;
+  font-weight: 900;
+  color: #ff5f6d;
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.7), 0 0 20px rgba(255, 0, 0, 0.5);
+  animation: zoom 2s infinite ease-in-out;
+}
+
+h1 #heart {
+  margin: 0 0.5rem;
+  font-size: 3.5rem;
+  color: #ff0000;
+  text-shadow: 0 0 10px rgba(255, 0, 0, 1), 0 0 20px rgba(255, 0, 0, 0.9);
+  animation: heartbeat 1.2s infinite;
+}
+
+h1 #heart::before {
+  content: "❤";
+  font-size: 3.5rem;
+}
+
+@keyframes zoom {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
