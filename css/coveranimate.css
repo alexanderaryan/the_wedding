@@ -9,11 +9,37 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
- #open-invitation{
-    background: crimson;
-    color: #fff;
-    border: 2px solid crimson;
+#open-invitation {
+  background: linear-gradient(135deg, #e53935, #d81b60);
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
+
+#open-invitation:hover {
+  background: linear-gradient(135deg, #d81b60, #e53935);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+#open-invitation {
+  animation: pulse 2s infinite;
+}
+
 
 h1 #coverfont  {
   font-size: 4rem;

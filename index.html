@@ -124,9 +124,7 @@
 					    <span id="coverfont">Groom</span>
 					  </h1>
 						<p>We cordially Invite You To Attend Our Wedding Event.</p>
-						<button class="btn btn-primary" id="open-invitation">
-							<h1 id="coverfont">Open Invitation</h1>
-						</button>
+							<button class="invitation-button" id="open-invitation">Open Invitation</button>
 					</div>
 				</div>
 			</div>
@@ -494,8 +492,8 @@
 			c[i].classList.add('animate');
 		}*/
 	});
-
-	$.get( "https://api.github.com/repos/Brideanderaryan/wedding_Bride_Groom/issues?state=all&per_page", function( data ) {
+	//Edit Alert: Update your github URL
+	$.get( "https://api.github.com/repos/alexanderaryan/the_wedding/issues?state=all&per_page", function( data ) {
 		for (let i = 0; i < data.length; i++){
 			const item = `
 				<a class="list-group-item">
